@@ -19,8 +19,8 @@ d2y_dx2 = np.gradient(dy_dx, x)
 concavity = np.sign(d2y_dx2)
 
 # Plot da solução e concavidade
-plt.plot(x, dy_dx, label='Solução Exata')
-plt.plot(x, concavity, label='Concavidade')
+plt.plot(x, dy_dx, label='Solução Exata', color='black')
+plt.plot(x, concavity, label='Concavidade', color='black', linestyle='dashed')
 plt.xlabel('x')
 plt.ylabel('y(x) e concavidade')
 plt.title('Solução Exata e Concavidade')
